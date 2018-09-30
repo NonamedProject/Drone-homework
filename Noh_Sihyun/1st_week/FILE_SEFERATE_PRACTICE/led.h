@@ -1,7 +1,7 @@
 #ifndef _LED_H
 #define _LED_H
 
-void led_write();
+void Led_Write();
 
 #endif
 

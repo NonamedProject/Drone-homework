@@ -1,24 +1,24 @@
-USART Åë½Å
+USART í†µì‹ 
 ==========
-°³³ä / Åë½Å
+ê°œë… / í†µì‹ 
 ----------------
-* UART(¹ü¿ë ºñµ¿±âÈ­ ¼Û¼ö½Å±â: Universal asynchronous receiver/transmitter)´Â º´·Ä µ¥ÀÌÅÍÀÇ ÇüÅÂ¸¦ Á÷·Ä ¹æ½ÄÀ¸·Î ÀüÈ¯ÇÏ¿© µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÏ´Â ÄÄÇ»ÅÍ ÇÏµå¿þ¾îÀÇ ÀÏÁ¾
-* UART´Â ÀÏ¹ÝÀûÀ¸·Î EIA RS-232, RS-422, RS-485¿Í °°Àº Åë½Å Ç¥ÁØ°ú ÇÔ²² »ç¿ëÇÑ´Ù.
-* UARTÀÇ U´Â ¹ü¿ëÀ» °¡¸®Å°´Âµ¥ ÀÌ´Â ÀÚ·á ÇüÅÂ³ª Àü¼Û ¼Óµµ¸¦ Á÷Á¢ ±¸¼ºÇÒ ¼ö ÀÖ°í ½ÇÁ¦ Àü±â ½ÅÈ£ ¼öÁØ°ú ¹æ½Ä(ÀÌ¸¦Å×¸é Â÷ºÐ ½ÅÈ£)ÀÌ ÀÏ¹ÝÀûÀ¸·Î UART ¹Ù±ùÀÇ Æ¯Á¤ÇÑ µå¶óÀÌ¹ö È¸·Î¸¦ ÅëÇØ °ü¸®¸¦ ¹Þ´Â´Ù´Â ¶æÀÌ´Ù.
-* Åë½Å µ¥ÀÌÅÍ´Â ¸Þ¸ð¸® ¶Ç´Â ·¹Áö½ºÅÍ¿¡ µé¾î ÀÖ¾î ÀÌ°ÍÀ» Â÷·Ê´ë·Î ÀÐ¾î Á÷·ÄÈ­ ÇÏ¿© Åë½ÅÇÑ´Ù. ÃÖ´ë 8ºñÆ®°¡ ±âº» ´ÜÀ§ÀÌ´Ù.
-* UART´Â ÀÏ¹ÝÀûÀ¸·Î ÄÄÇ»ÅÍ³ª ÁÖº¯ ±â±âÀÇ ÀÏÁ¾À¸·Î º´·Ä µ¥ÀÌÅÍ¸¦ Á÷·ÄÈ­ ÇÏ¿© Åë½ÅÇÏ´Â °³º° ÁýÀû È¸·ÎÀÌ´Ù. ºñµ¿±â Åë½ÅÀÌ¹Ç·Î µ¿±â ½ÅÈ£°¡ Àü´ÞµÇÁö ¾Ê´Â´Ù. µû¶ó¼­ ¼ö½Å ÂÊ¿¡¼­ µ¿±â½ÅÈ£¸¦ Ã£¾Æ³»¾î µ¥ÀÌÅÍÀÇ ½ÃÀÛ°ú ³¡À» ½Ã°£ÀûÀ¸·Î ¾Ë¾Æ Ã³¸®ÇÒ ¼ö ÀÖµµ·Ï ¾à¼ÓµÇ¾î ÀÖ´Ù.
+* UART(ë²”ìš© ë¹„ë™ê¸°í™” ì†¡ìˆ˜ì‹ ê¸°: Universal asynchronous receiver/transmitter)ëŠ” ë³‘ë ¬ ë°ì´í„°ì˜ í˜•íƒœë¥¼ ì§ë ¬ ë°©ì‹ìœ¼ë¡œ ì „í™˜í•˜ì—¬ ë°ì´í„°ë¥¼ ì „ì†¡í•˜ëŠ” ì»´í“¨í„° í•˜ë“œì›¨ì–´ì˜ ì¼ì¢…
+* UARTëŠ” ì¼ë°˜ì ìœ¼ë¡œ EIA RS-232, RS-422, RS-485ì™€ ê°™ì€ í†µì‹  í‘œì¤€ê³¼ í•¨ê»˜ ì‚¬ìš©í•œë‹¤.
+* UARTì˜ UëŠ” ë²”ìš©ì„ ê°€ë¦¬í‚¤ëŠ”ë° ì´ëŠ” ìžë£Œ í˜•íƒœë‚˜ ì „ì†¡ ì†ë„ë¥¼ ì§ì ‘ êµ¬ì„±í•  ìˆ˜ ìžˆê³  ì‹¤ì œ ì „ê¸° ì‹ í˜¸ ìˆ˜ì¤€ê³¼ ë°©ì‹(ì´ë¥¼í…Œë©´ ì°¨ë¶„ ì‹ í˜¸)ì´ ì¼ë°˜ì ìœ¼ë¡œ UART ë°”ê¹¥ì˜ íŠ¹ì •í•œ ë“œë¼ì´ë²„ íšŒë¡œë¥¼ í†µí•´ ê´€ë¦¬ë¥¼ ë°›ëŠ”ë‹¤ëŠ” ëœ»ì´ë‹¤.
+* í†µì‹  ë°ì´í„°ëŠ” ë©”ëª¨ë¦¬ ë˜ëŠ” ë ˆì§€ìŠ¤í„°ì— ë“¤ì–´ ìžˆì–´ ì´ê²ƒì„ ì°¨ë¡€ëŒ€ë¡œ ì½ì–´ ì§ë ¬í™” í•˜ì—¬ í†µì‹ í•œë‹¤. ìµœëŒ€ 8ë¹„íŠ¸ê°€ ê¸°ë³¸ ë‹¨ìœ„ì´ë‹¤.
+* UARTëŠ” ì¼ë°˜ì ìœ¼ë¡œ ì»´í“¨í„°ë‚˜ ì£¼ë³€ ê¸°ê¸°ì˜ ì¼ì¢…ìœ¼ë¡œ ë³‘ë ¬ ë°ì´í„°ë¥¼ ì§ë ¬í™” í•˜ì—¬ í†µì‹ í•˜ëŠ” ê°œë³„ ì§‘ì  íšŒë¡œì´ë‹¤. ë¹„ë™ê¸° í†µì‹ ì´ë¯€ë¡œ ë™ê¸° ì‹ í˜¸ê°€ ì „ë‹¬ë˜ì§€ ì•ŠëŠ”ë‹¤. ë”°ë¼ì„œ ìˆ˜ì‹  ìª½ì—ì„œ ë™ê¸°ì‹ í˜¸ë¥¼ ì°¾ì•„ë‚´ì–´ ë°ì´í„°ì˜ ì‹œìž‘ê³¼ ëì„ ì‹œê°„ì ìœ¼ë¡œ ì•Œì•„ ì²˜ë¦¬í•  ìˆ˜ ìžˆë„ë¡ ì•½ì†ë˜ì–´ ìžˆë‹¤.
 
-USART Åë½Å¿¡¼­ µ¿±â½Ä(Synchronous)°ú ºñµ¿±â½Ä(Asynchronous)ÀÇ Â÷ÀÌ
+USART í†µì‹ ì—ì„œ ë™ê¸°ì‹(Synchronous)ê³¼ ë¹„ë™ê¸°ì‹(Asynchronous)ì˜ ì°¨ì´
 -----------------
-* UART (Universal Asynchronous Receiver Transmit) : ºñµ¿±â ¸ðµå·Î¼­ »ç¿ëµÇ´Â ½Ã¸®¾óÅë½Å
-  * ºñµ¿±â Åë½ÅÀÌ¹Ç·Î µ¥ÀÌÅÍ¸¦ ¿øÇÒÀÌ ¼Û½Å, ¼ö½ÅÇÏ±â À§ÇØ µ¿±â ½ÅÈ£¸¦ ´ëÃ¼ÇÏ´Â ¹æ¹ýÀ» »ç¿ëÇØ¾ß ÇÑ´Ù.
-    * ºñµ¿±â ¸ðµå´Â º°µµÀÇ Å¬·ÏÀ» »ç¿ëÇÏÁö ¾Ê°í µ¥ÀÌÅÍ¸¦ ¼Û¼ö½ÅÇÏ´Â ¸ðµå·Î ½ÃÀÛ ºñÆ®(start bit)¿Í Á¤Áö ºñÆ®(stop bit)¸¦ ÅëÇØ µ¥ÀÌÅÍ µ¿±âÈ­°¡ ÀÌ·ç¾îÁø´Ù.
-  * UARTÅë½ÅÀº 3°¡´ÚÀÇ ¼±À» »ç¿ëÇÏ´Âµ¥ µ¥ÀÌÅÍ ¼ö½ÅÀ» À§ÇÑ RXD, µ¥ÀÌÅÍ ¼Û½ÅÀ» À§ÇÑ TXD, Åë½Å °£ Àü¾Ð ±âÁØÀ» ¸ÂÃß±â À§ÇÑ GND·Î ºÐ·ùµÈ´Ù.
-* USART (Universal Synchronus Receiver Transmit) : µ¿±â ¸ðµå·Î¼­ »ç¿ëµÇ´Â ½Ã¸®¾óÅë½Å
-  * ´Ù¸¥ Åë½Å¿¡ ºñÇØ ´À¸®°í, ¸Ö¸® µ¥ÀÌÅÍ¸¦ º¸³¾ ¼ö´Â ¾øÁö¸¸, ±Ù°Å¸®¿¡¼­ ¼Ò·®ÀÇ µ¥ÀÌÅÍ¸¦ º¸³¾ ¶§ À¯¿ëÇÑ Åë½Å
-  * µ¿±â ¸ðµå´Â µ¥ÀÌÅÍ µ¿±âÈ­¸¦ À§ÇØ º°µµÀÇ Å¬·Ï ½ÅÈ£¸¦ Àü¼ÛÇÑ´Ù. AVR¿¡¼­ µ¥ÀÌÅÍ µ¿±âÈ­¸¦ À§ÇÑ Å¬·Ï ½ÅÈ£´Â XCK ÇÉÀ» ÅëÇØ Àü´ÞµÈ´Ù.
-  * µ¿±â ¸ðµå¿¡¼­´Â ºñµ¿±â ¸ðµå¿¡¼­ µ¥ÀÌÅÍ µ¿±âÈ­¸¦ À§ÇØ »ç¿ëÇÏ´Â ½ÃÀÛ ºñÆ®(start bit)¿Í Á¤Áö ºñÆ®(stop bit)´Â ÇÊ¿äÇÏÁö ¾ÊÀ¸¹Ç·Î µ¥ÀÌÅÍ Àü¼Û È¿À²À» ³ôÀÏ ¼ö ÀÖ´Â ÀåÁ¡ÀÌ ÀÖÁö¸¸, Å¬·Ï ÇÉÀ» ÇÊ¿ä·Î ÇÏ´Â ´ÜÁ¡ÀÌ ÀÖ´Ù.
-![](C:\Users\DSM2018\Desktop\¿©·¯°¡Áö\Àâ.jpg)
+* UART (Universal Asynchronous Receiver Transmit) : ë¹„ë™ê¸° ëª¨ë“œë¡œì„œ ì‚¬ìš©ë˜ëŠ” ì‹œë¦¬ì–¼í†µì‹ 
+  * ë¹„ë™ê¸° í†µì‹ ì´ë¯€ë¡œ ë°ì´í„°ë¥¼ ì›í• ì´ ì†¡ì‹ , ìˆ˜ì‹ í•˜ê¸° ìœ„í•´ ë™ê¸° ì‹ í˜¸ë¥¼ ëŒ€ì²´í•˜ëŠ” ë°©ë²•ì„ ì‚¬ìš©í•´ì•¼ í•œë‹¤.
+    * ë¹„ë™ê¸° ëª¨ë“œëŠ” ë³„ë„ì˜ í´ë¡ì„ ì‚¬ìš©í•˜ì§€ ì•Šê³  ë°ì´í„°ë¥¼ ì†¡ìˆ˜ì‹ í•˜ëŠ” ëª¨ë“œë¡œ ì‹œìž‘ ë¹„íŠ¸(start bit)ì™€ ì •ì§€ ë¹„íŠ¸(stop bit)ë¥¼ í†µí•´ ë°ì´í„° ë™ê¸°í™”ê°€ ì´ë£¨ì–´ì§„ë‹¤.
+  * UARTí†µì‹ ì€ 3ê°€ë‹¥ì˜ ì„ ì„ ì‚¬ìš©í•˜ëŠ”ë° ë°ì´í„° ìˆ˜ì‹ ì„ ìœ„í•œ RXD, ë°ì´í„° ì†¡ì‹ ì„ ìœ„í•œ TXD, í†µì‹  ê°„ ì „ì•• ê¸°ì¤€ì„ ë§žì¶”ê¸° ìœ„í•œ GNDë¡œ ë¶„ë¥˜ëœë‹¤.
+* USART (Universal Synchronus Receiver Transmit) : ë™ê¸° ëª¨ë“œë¡œì„œ ì‚¬ìš©ë˜ëŠ” ì‹œë¦¬ì–¼í†µì‹ 
+  * ë‹¤ë¥¸ í†µì‹ ì— ë¹„í•´ ëŠë¦¬ê³ , ë©€ë¦¬ ë°ì´í„°ë¥¼ ë³´ë‚¼ ìˆ˜ëŠ” ì—†ì§€ë§Œ, ê·¼ê±°ë¦¬ì—ì„œ ì†ŒëŸ‰ì˜ ë°ì´í„°ë¥¼ ë³´ë‚¼ ë•Œ ìœ ìš©í•œ í†µì‹ 
+  * ë™ê¸° ëª¨ë“œëŠ” ë°ì´í„° ë™ê¸°í™”ë¥¼ ìœ„í•´ ë³„ë„ì˜ í´ë¡ ì‹ í˜¸ë¥¼ ì „ì†¡í•œë‹¤. AVRì—ì„œ ë°ì´í„° ë™ê¸°í™”ë¥¼ ìœ„í•œ í´ë¡ ì‹ í˜¸ëŠ” XCK í•€ì„ í†µí•´ ì „ë‹¬ëœë‹¤.
+  * ë™ê¸° ëª¨ë“œì—ì„œëŠ” ë¹„ë™ê¸° ëª¨ë“œì—ì„œ ë°ì´í„° ë™ê¸°í™”ë¥¼ ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ì‹œìž‘ ë¹„íŠ¸(start bit)ì™€ ì •ì§€ ë¹„íŠ¸(stop bit)ëŠ” í•„ìš”í•˜ì§€ ì•Šìœ¼ë¯€ë¡œ ë°ì´í„° ì „ì†¡ íš¨ìœ¨ì„ ë†’ì¼ ìˆ˜ ìžˆëŠ” ìž¥ì ì´ ìžˆì§€ë§Œ, í´ë¡ í•€ì„ í•„ìš”ë¡œ í•˜ëŠ” ë‹¨ì ì´ ìžˆë‹¤.
+![A](C:\Users\DSM2018\Desktop\ì—¬ëŸ¬ê°€ì§€\ìž¡.jpg)
 
-parity ºñÆ®
+parity ë¹„íŠ¸
 ----------------

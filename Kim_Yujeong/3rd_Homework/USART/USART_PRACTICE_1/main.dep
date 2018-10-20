@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>2147548232</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\USART_PRACTICE_2\main.c</file>
+        </outputs>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+    </configuration>
+</project>

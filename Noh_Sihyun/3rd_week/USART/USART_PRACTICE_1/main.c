@@ -63,11 +63,7 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-int fputc(int c, FILE *stream)
-{
-	HAL_UART_Transmit(&huart2, (unit8_t *)&c, 1, 1000);
-	return c;
-}
+
 /* USER CODE END 0 */
 
 /**
